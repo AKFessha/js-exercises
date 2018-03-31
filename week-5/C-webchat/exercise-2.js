@@ -29,7 +29,6 @@ on the submit button. Then check the following:
 var submitButton = document.querySelector("#submit");
 submitButton.addEventListener("click", function() {
   var container = document.querySelector("#message-input");
-  var container2 = document.querySelector("#message-list");
 
   var requestBody = { content: container.value };
   var postRequestParameters = {

@@ -41,8 +41,14 @@ setInterval(function() {
       return response.json();
     })
     .then(function(messages) {
-      container2.innerHTML = messages.map(
-        element => element.content + " " + element.datetime
-      );
+      container2.innerHTML = null;
+      messages.forEach(function(message) {
+        var paragraph = document.createElement("p");
+        paragraph.innerHTML = message.content; // + " " + message.datetime;
+        container2.appendChild(paragraph);
+      });
+      /*  container2.innerHTML = messages.map(
+          element => element.content + " " + element.datetime
+        );*/
     });
 }, 2000);
