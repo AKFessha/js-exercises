@@ -58,6 +58,9 @@ submitBtn.addEventListener("click", function(event) {
     emailContainer.value = "";
     nameContainer.value = "";
     descriptionConatiner.value = "";
+    emailContainer.style.backgroundColor = "white";
+    nameContainer.style.backgroundColor = "white";
+    descriptionConatiner.style.backgroundColor = "white";
     alert("Thanks for filling out the form");
   }
 });
