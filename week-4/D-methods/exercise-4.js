@@ -7,7 +7,7 @@ var person = {
   name: "Alice",
   friends: ["John", "Nina"],
   makeFriend: function(friend) {
-    return (this.friends = this.friends + "," + friend);
+    return (this.friends[2] = friend);
   }
 };
 

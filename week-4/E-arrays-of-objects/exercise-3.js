@@ -81,7 +81,6 @@ var restaurantFinderApplication = {
       if (restaurant.address.area === area) {
         return restaurant.name;
       }
-      // Complete here
     }
     var result = restaurants.map(checkingResturants);
     return result.length - 1;

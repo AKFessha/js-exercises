@@ -20,7 +20,7 @@ var house = {
 */
 house.address = "51 Berkley Road";
 house.previousOwners = ["Brian M.", "Fiona S."];
-house.lastName = "Montgomery";
+house.currentOwner.lastName = "Montgomery";
 
 // - change the address of "house" to '51 Berkley Road'
 // - change the previous owners of "house" to ["Brian M.", "Fiona S."]
