@@ -37,9 +37,7 @@ When you open index.html in your browser, it should display the existing message
 setInterval(function() {
   var container2 = document.querySelector("#message-list");
   fetch("https://codeyourfuture.herokuapp.com/api/messages")
-    .then(function(response) {
-      return response.json();
-    })
+    .then(response => response.json())
     .then(function(messages) {
       container2.innerHTML = null;
       messages.forEach(function(message) {

@@ -44,9 +44,7 @@ fetch(
     clipboardTitle
   )
 )
-  .then(function(response) {
-    return response.text();
-  })
+  .then(response => response.text())
   .then(function(text) {
     console.log(text);
   });

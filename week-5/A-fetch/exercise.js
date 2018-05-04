@@ -21,9 +21,7 @@ var button4 = document.querySelector("#chanLan");
 var container = document.querySelector("#greeting-text");
 button4.addEventListener("click", function() {
   fetch("https://codeyourfuture.herokuapp.com/api/greetings")
-    .then(function(response) {
-      return response.text();
-    })
+    .then(response => response.text())
     .then(function(greeting) {
       container.innerHTML = greeting;
     });
