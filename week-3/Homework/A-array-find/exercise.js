@@ -8,7 +8,7 @@
 
 
 function findLongNameThatStartsWithA(name){
-  return name.length > 7;
+  return name.length > 7 && .....;
 }
 
 
